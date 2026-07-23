@@ -1,0 +1,24 @@
+# Render Deployment Config
+# Add this file to your backend directory for Render deployment
+
+services:
+  - type: web
+    name: forgemuse-ai-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: IBMCLOUD_API_KEY
+        sync: false
+      - key: IBM_GRANITE_PROJECT_ID
+        sync: false
+      - key: FRONTEND_URL
+        sync: false

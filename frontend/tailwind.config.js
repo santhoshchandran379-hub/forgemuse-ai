@@ -1,0 +1,86 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50: '#f0f4ff',
+          100: '#e0e9ff',
+          200: '#c0d3ff',
+          300: '#93b4ff',
+          400: '#608bff',
+          500: '#3b62f5',
+          600: '#2540eb',
+          700: '#1d30d0',
+          800: '#1e2baa',
+          900: '#1e2b86',
+          950: '#161a54',
+        },
+        purple: {
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7e22ce',
+        },
+        dark: {
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          850: '#172033',
+          900: '#0f172a',
+          950: '#050d1a',
+        }
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'glass': 'linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))',
+        'glass-dark': 'linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02))',
+        'hero-glow': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59,98,245,0.3), transparent)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'fade-up': 'fadeUp 0.6s ease-out',
+        'slide-in': 'slideIn 0.4s ease-out',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'glow': 'glow 2s ease-in-out infinite alternate',
+        'shimmer': 'shimmer 2s linear infinite',
+        'spin-slow': 'spin 8s linear infinite',
+      },
+      keyframes: {
+        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        fadeUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        slideIn: { '0%': { transform: 'translateX(-20px)', opacity: '0' }, '100%': { transform: 'translateX(0)', opacity: '1' } },
+        float: { '0%, 100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-10px)' } },
+        glow: { '0%': { boxShadow: '0 0 20px rgba(59,98,245,0.3)' }, '100%': { boxShadow: '0 0 40px rgba(59,98,245,0.6)' } },
+        shimmer: { '0%': { backgroundPosition: '-200% 0' }, '100%': { backgroundPosition: '200% 0' } },
+      },
+      backdropBlur: { xs: '2px' },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        'glass-sm': '0 4px 16px 0 rgba(31, 38, 135, 0.2)',
+        'brand': '0 4px 24px rgba(59, 98, 245, 0.4)',
+        'brand-lg': '0 8px 40px rgba(59, 98, 245, 0.5)',
+        'inner-glow': 'inset 0 1px 0 rgba(255,255,255,0.1)',
+      },
+    },
+  },
+  plugins: [],
+}

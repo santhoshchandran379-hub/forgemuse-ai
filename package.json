@@ -1,0 +1,17 @@
+{
+  "name": "forgemuse-ai",
+  "version": "1.0.0",
+  "description": "ForgeMuse AI – Full-Stack AI Creative Studio",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
