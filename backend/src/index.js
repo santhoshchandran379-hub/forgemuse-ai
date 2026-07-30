@@ -31,14 +31,15 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 // CORS
 // ------------------------
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL || 'http://localhost:3000',
-    'http://localhost:3001',
-    'http://127.0.0.1:3001',
-    'http://127.0.0.1:3000',
-    'https://forgemuseai.com',
-    'https://www.forgemuseai.com'
-  ],
+ origin: [
+  process.env.FRONTEND_URL || 'http://localhost:3000',
+  'http://localhost:3001',
+  'http://127.0.0.1:3001',
+  'http://127.0.0.1:3000',
+  'https://forgemuse-ai-370.vercel.app',
+  'https://forgemuseai.com',
+  'https://www.forgemuseai.com'
+],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
