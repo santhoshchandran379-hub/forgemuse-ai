@@ -812,15 +812,13 @@ The demonstration video showcases:
 
 ## Frontend
 
-```
-(Add your Vercel frontend URL here)
-```
+
+https://forgemuse-ai-370.vercel.app
+
 
 ## Backend API
 
-```
-(Add your Render backend URL here)
-```
+https://forgemuse-ai.onrender.com
 
 ## GitHub Repository
 
