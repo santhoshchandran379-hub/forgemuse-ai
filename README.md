@@ -786,10 +786,7 @@ These screenshots demonstrate the complete user experience from authentication t
 ## Public Demo Video
 
 YouTube Link:
-
-```
-(Add your demo video link here)
-```
+https://youtu.be/vMPa9G0BRrM?si=ppUbwrD6-gBKNNJQ
 
 The demonstration video showcases:
 
