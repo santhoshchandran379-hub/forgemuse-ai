@@ -756,7 +756,7 @@ Each endpoint communicates with IBM Granite AI to generate structured creative c
 ---
 # 📸 Screenshots
 
-Screenshots of the completed ForgeMuse AI application are available in the `screenshots` directory.
+Screenshots of the completed ForgeMuse AI application are available in the `` directory.
 
 ## Recommended Showcase
 
@@ -822,11 +822,8 @@ https://forgemuse-ai.onrender.com
 
 ## GitHub Repository
 
-```
-https://github.com/sunthosh4/forgemuse-ai
-```
+https://github.com/santhoshchandran379-hub/forgemuse-ai.git
 
----
 
 # 🌍 Real-World Impact
 
